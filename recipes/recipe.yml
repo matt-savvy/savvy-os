@@ -17,6 +17,21 @@ modules:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
+  # from wunker-os/recipes/common/updates.yml
+  - type: files
+    files:
+      - source: bootc-update
+        destination: /usr/lib/systemd/system
+
+  - type: systemd
+    system:
+      masked:
+        - ublue-update.timer
+        - uupd.timer
+        - rpm-ostreed-automatic.timer
+      enabled:
+        - bootc-fetch-apply-updates.timer
+
   - type: dnf
     repos:
       copr:
