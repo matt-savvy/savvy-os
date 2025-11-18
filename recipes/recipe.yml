@@ -51,6 +51,7 @@ modules:
         - tldr
         - direnv
         - colordiff
+        - age
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
