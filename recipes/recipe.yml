@@ -34,7 +34,7 @@ modules:
 
   - type: script
     snippets:
-      - "FLYCTL_INSTALL=/usr/local/bin curl -L https://fly.io/install.sh | sh"
+      - "curl -L https://fly.io/install.sh | FLYCTL_INSTALL=$HOME/.local/some-dir sh"
 
   - type: dnf
     repos:
