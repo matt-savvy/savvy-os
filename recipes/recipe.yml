@@ -32,6 +32,10 @@ modules:
       enabled:
         - bootc-fetch-apply-updates.timer
 
+  - type: script
+    snippets:
+      - "FLYCTL_INSTALL=/usr/local/bin curl -L https://fly.io/install.sh | sh"
+
   - type: dnf
     repos:
       copr:
