@@ -13,7 +13,7 @@ main() {
     flyctl_uri=$(curl -s ${FLY_FORCE_TRACE:+ -H "Fly-Force-Trace: $FLY_FORCE_TRACE"} https://api.fly.io/app/flyctl_releases/$os/$arch/$version)
 
     # location for binary to be installed
-    flyctl_install="${FLYCTL_INSTALL:-$HOME/.fly/bin}"
+    flyctl_install=/usr/local/bin
 
     mkdir -p "$flyctl_install"
     tmp_dir=$(mktemp -d)
