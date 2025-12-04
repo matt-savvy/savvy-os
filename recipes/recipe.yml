@@ -72,10 +72,15 @@ modules:
         install: # system flatpaks we want all users to have and not remove
           - com.bitwarden.desktop
           - com.brave.Browser
+          - com.github.johnfactotum.Foliate
+          - com.obsproject.Studio
+          - com.protonvpn.www
           - com.spotify.Client
+          - org.audacityteam.Audacity
           - org.gnome.Evince
           - org.gnome.Loupe
           - org.gnome.clocks
+          - org.kde.kdenlive
           - org.zealdocs.Zeal
       - scope: user # Also add Flathub user repo, but no user packages
 
