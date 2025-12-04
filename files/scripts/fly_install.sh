@@ -2,7 +2,7 @@
 # Based on Fly.io install script - https://fly.io/install.sh
 # which is based on Deno installer: Copyright 2019 the Deno authors. All rights reserved. MIT license.
 
-set -e
+set -eox pipefail
 
 main() {
     os=$(uname -s)
