@@ -37,6 +37,7 @@ modules:
     scripts:
       - fly_install.sh
 
+
   - type: dnf
     repos:
       copr:
@@ -57,6 +58,7 @@ modules:
         - direnv
         - colordiff
         - age
+        - caddy
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
