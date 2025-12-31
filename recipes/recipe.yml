@@ -82,6 +82,7 @@ modules:
           - org.gnome.Evince
           - org.gnome.Loupe
           - org.gnome.clocks
+          - org.gimp.GIMP
           - org.kde.kdenlive
           - org.zealdocs.Zeal
       - scope: user # Also add Flathub user repo, but no user packages
